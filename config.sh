@@ -14,7 +14,7 @@ GPGUSER="GpgUser" # set this to use gpg encryption
 FNAME=home_backup_$(date -I).tar.gz # because we assume one backup per day
 LOCALPATH="$LOCALDIR$FNAME"
 REMOTEPATH="ftp://$IP/homes/$UNAME/$FNAME"
-EXCLUDEFILE="$DIR/backup_exclude.txt"
+EXCLUDEFILE="$DIR/exclude.txt"
 
 # must allow execution of tar, curl and notify-send. Also gpg if you have set GPGUSER
 PATH="/usr/bin/"
